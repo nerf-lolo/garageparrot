@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+<form method="post" id="loginForm" class="my-4 mx-4">
+    {% if error %}
+    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control"
+        autocomplete="email" required autofocus placeholder="Email"><br>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password"
+        required placeholder="Mot de passe"><br>
+
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+    <button class="btn btn-outline-danger" type="submit">
+        Connexion
+    </button>
+</form>
+
+
+{% endblock %}

@@ -1,5 +1,9 @@
 controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+  resource:
+    path: ../src/Controller/
+    namespace: App\Controller
+  type: attribute
+
+car_filter:
+  path: /cars/filter
+  controller: App\Controller\CarController::filter

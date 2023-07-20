@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactFormController!{% endblock %}
+
+{% block body %}
+<div class="container mt-3">
+    <div class="py-3">
+        <h2>Une question? Un renseignement? Prendre rendez-vous?</h2>
+        <br>
+        <p>
+            Notre équipe est dévouée et compétente, prête à vous offrir le meilleur service possible. Nous traitons
+            chaque
+            demande avec la plus grande attention et nous nous engageons à vous apporter une réponse complète et rapide.
+
+            Nous vous remercions de votre confiance et nous avons hâte de vous entendre. N'hésitez pas à nous contacter,
+            car
+            votre satisfaction est notre priorité absolue !
+
+            Remarque : Vos informations personnelles seront traitées avec la plus grande confidentialité et ne seront
+            pas
+            partagées avec des tiers sans votre consentement.
+        </p>
+        <h3 class="py-3">Formulaire de contact:</h3>
+        {{ form(contactForm, {'attr': {'id': 'contactForm'}}) }}
+    </div>
+</div>
+
+
+{% endblock %}

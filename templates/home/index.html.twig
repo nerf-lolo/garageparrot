@@ -1,0 +1,151 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Garage Parrot{% endblock %}
+
+{% block body %}
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{{ asset('uploads/diapo1.jpg') }}" class="d-block w-100 carCarrouselImg"
+                alt="voiture mécanique carrosserie">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Garage Parrot</h5>
+                <p class="text-center">Mécanique - Carrosserie</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ asset('uploads/diapo2.jpg') }}" class="d-block w-100 carCarrouselImg"
+                alt="voiture mécanique carrosserie">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Garage Parrot</h5>
+                <p class="text-center">Mécanique - Carrosserie</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="{{ asset('uploads/diapo3.jpg') }}" class="d-block w-100 carCarrouselImg"
+                alt="voiture mécanique carrosserie">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Garage Parrot</h5>
+                <p class="text-center">Mécanique - Carrosserie</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<section class="pt-4" id="about">
+    <div class="container">
+        <div class="text-center py-1">
+
+            <div>
+                <h2 class="aboutme text-center">Notre garage</h2>
+
+                <div class="about-content">
+                    <div class="img-container">
+                        <img class="img-thumbnail" src="{{asset('uploads/equipe-garagiste.jpg ')}}" alt="portrait"
+                            style="max-width: 100%" />
+                    </div>
+                    <p class="pt-3">
+                        <span class="fw-bold">Bienvenue au GarageParrot! </span><br><br>
+
+                        Chez nous, nous considérons chaque client comme un membre de notre famille. Notre histoire
+                        remonte à plusieurs générations, et notre passion pour l'automobile est ce qui nous anime chaque
+                        jour.
+
+                        Notre garage est bien plus qu'un simple lieu de réparation de voitures ; c'est un espace où la
+                        confiance et l'authenticité se mêlent pour créer une expérience unique. Ici, vous serez
+                        accueilli chaleureusement par des visages familiers, prêts à vous offrir un service personnalisé
+                        et attentionné.
+
+                        Dans notre atelier, nous mettons tout en œuvre pour redonner vie à votre véhicule, quelle que
+                        soit sa marque ou son âge. Notre équipe de mécaniciens passionnés mettra tout son savoir-faire
+                        et son expertise pour résoudre les problèmes, effectuer les réparations nécessaires, et
+                        s'assurer que votre voiture retrouve toute sa splendeur.
+
+                        Nous croyons fermement que la qualité et la transparence sont essentielles pour établir une
+                        relation de confiance avec nos clients. Vous serez informé à chaque étape du processus, avec des
+                        explications claires et honnêtes concernant les travaux à effectuer.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-2 " id="mécanique">
+    <div class="container">
+        <div class="text-center py-1">
+
+            <div>
+                <h2 class="aboutme text-center">Nos Services</h2>
+
+                <div class="service-content">
+                    <p class="text-justify pt-3">
+                        Découvrez nos services de mécanique et de carrosserie au sein de notre garage familial !<br><br>
+
+                        <span class="fw-bold">Expertise mécanique :</span><br><br>
+                        Notre équipe de mécaniciens chevronnés met à votre disposition son savoir-faire et son
+                        expérience pour résoudre tous les problèmes mécaniques de votre véhicule. Qu'il s'agisse d'une
+                        panne imprévue, d'un entretien régulier ou d'une réparation complexe, nous sommes là pour vous
+                        offrir des solutions fiables et durables. Nous utilisons des équipements de pointe et des
+                        méthodes de travail rigoureuses pour diagnostiquer avec précision les problèmes et remettre
+                        votre voiture en parfait état de fonctionnement. Notre engagement envers la qualité et la
+                        satisfaction de nos clients est au cœur de notre démarche. <br><br>
+
+                        <span class="fw-bold">Artisans carrossiers :</span><br><br>
+                        Confiez la beauté de votre voiture à nos artisans carrossiers talentueux. Que votre véhicule ait
+                        subi des dommages mineurs ou des accidents plus importants, nous avons l'expertise nécessaire
+                        pour redonner à votre carrosserie son éclat d'origine. Nous travaillons avec minutie et passion
+                        pour réaliser des réparations de carrosserie de haute qualité. Notre souci du détail et notre
+                        sens de l'esthétique garantissent un résultat à la hauteur de vos attentes. Nous utilisons des
+                        matériaux de première qualité et des techniques de pointe pour restaurer la carrosserie de votre
+                        véhicule et lui redonner toute sa splendeur.
+
+                        <br><br>
+                        <a class="more-infos text-right" href="{{ path('app_service')}}"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg> En savoir plus</a>
+                        <hr>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <div class="review-area mb-5">
+        <h3 class="mb-4 fst-italic text-center">Laisser un avis</h3>
+
+        {{ form(reviewForm) }}
+    </div>
+
+    <div class="review-list">
+        <h3 class="mb-4 fst-italic text-center">Avis de nos clients</h3>
+        {% include 'review/review-list.html.twig' with { reviews } %}
+    </div>
+
+</section>
+
+{% endblock %}

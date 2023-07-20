@@ -1,0 +1,7 @@
+<div class="container text-center">
+    <h3 class="text-uppercase">Horaires d'ouverture</h3>
+    {% for schedules in schedules %}
+    <span class="text-uppercase">{{schedules.day}}</span>
+    <p class="text-center">{{schedules.openTime}}</p>
+    {%endfor%}
+</div>

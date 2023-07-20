@@ -1,0 +1,20 @@
+easy_admin:
+  entities:
+    Review:
+      class: App\Entity\Review
+      label: Reviews
+      list:
+        fields:
+          - id
+          - last_name
+          - content
+          - mark
+          - { property: "isOnline", label: "En ligne" } # Ajouter cette ligne pour afficher l'état de publication
+      edit:
+        form:
+          fields:
+            - last_name
+            - content
+            - mark
+            - { property: "isOnline", type: "checkbox", label: "En ligne" } # Ajouter cette ligne pour éditer l'état de publication
+      delete: true
