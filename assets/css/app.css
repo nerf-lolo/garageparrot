@@ -1,0 +1,124 @@
+header {
+  border-bottom: 3px solid #d92332;
+}
+
+p {
+  text-align: justify;
+}
+
+.copyright {
+  background-color: #262526;
+  color: #f2f2f2;
+}
+.footerInfo {
+  padding-top: 10px;
+  border-top: 3px solid #d92332;
+}
+
+.contact-link,
+.more-infos {
+  color: #d92332;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.review-area {
+  background: #d9777f;
+  padding: 10px;
+  color: #f2f2f2;
+  border-radius: 5px;
+}
+
+#review_send {
+  color: #d92332;
+  border-color: #d92332;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.btns > a > svg {
+  color: #d92332;
+  border-color: #d92332;
+  font-weight: bold;
+  height: 20px;
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-body > .btns > button {
+  color: #d92332;
+  border-color: #d92332;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#searchForm,
+#contactForm {
+  background-color: #d9777f;
+  padding: 10px;
+  color: #f2f2f2;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#filterBtn,
+#contact_form_send {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  background-color: #d9777f;
+  font-weight: bold;
+}
+
+/* ***** MOBILE FIRST ***** */
+
+@media screen and (max-width: 465px) {
+  #searchForm,
+  #contactForm,
+  .review-area {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginForm {
+    width: 40%;
+    margin: 20px auto !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    width: 23rem;
+  }
+
+  #contactForm {
+    width: 70%;
+  }
+
+  .carCarrouselImg {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 25rem;
+  }
+  .carCarrouselImg {
+    height: 90vh;
+  }
+}
