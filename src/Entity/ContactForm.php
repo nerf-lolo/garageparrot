@@ -97,7 +97,7 @@ class ContactForm
         return $this;
     }
 
-    public function getMessage(): ?string
+    public function getContent(): ?string
     {
         return $this->content;
     }
