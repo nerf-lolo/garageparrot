@@ -10,7 +10,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 Étapes pour lancer le projet Symfony en local:
 
 - Cloner le projet : Tout d'abord, clonez le dépôt du projet Symfony dans le répertoire de votre choix:
-    git clone <lien_du_depot_git> mon_projet_symfony
+    git clone https://github.com/nerf-lolo/garageparrot.git
     cd mon_projet_symfony
 
 - Installer les dépendances : Utilisez Composer pour installer les dépendances du projet:
